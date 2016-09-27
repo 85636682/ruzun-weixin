@@ -1,0 +1,287 @@
+.home_header {
+  width: 100%;
+  background-image: url(./images/home_header_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  height: 200px;
+}
+
+.home_header .face {
+  display: flex;
+  flex-direction: row;
+}
+.home_header .face .l {
+  width: 50px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.home_header .face .c {
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+.home_header .face .r {
+  width: 50px;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.home_header .tabbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+}
+.home_header .tabbar .item {
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.home_header .tabbar .item .name {
+  font-size: 15px;
+}
+
+.home_main {
+  width: 100%;
+}
+.home_main .calendar {
+  margin: 10px;
+  border: solid 1px #eee;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+}
+.home_main .calendar .header {
+  border-bottom: solid 1px #eee;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+}
+.home_main .calendar .header .title {
+  margin: 10px;
+  flex: 1;
+}
+.home_main .calendar .header .count {
+  margin: 10px;
+  flex: 1;
+  text-align: right;
+}
+.home_main .calendar .played {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #eee;
+}
+.home_main .calendar .played .home_team {
+  flex: 1;
+  text-align: center;
+  font-size: 19px;
+}
+.home_main .calendar .played .guest_team {
+  flex: 1;
+  text-align: center;
+  font-size: 19px;
+}
+.home_main .calendar .played .vs {
+  width: 80px;
+  text-align: center;
+  color: #ea8010;
+}
+
+.home_no_sign_in {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.team_logo {
+  width: 100%;
+  text-align: center;
+}
+
+.team_logo .logo {
+  margin-top: 20px;
+  position: relative;
+}
+
+.team_logo .logo img {
+  z-index: 1000;
+  width: 165px;
+  height: 165px;
+}
+
+.team_logo .logo input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.personal_header {
+  position: relative;
+  background-color: #000;
+  height: 200px;
+}
+
+.personal_header .personal_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  -webkit-filter: blur(2px); /* Chrome, Opera */
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.personal_header .avatar {
+  position: relative;
+  text-align: center;
+}
+
+.personal_header .avatar img {
+  margin-top: 40px;
+  width: 124px;
+  height: 124px;
+  border-radius:50%;
+  overflow:hidden;
+  -webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
+  border-color:rgba(141,39,142,.75);
+  -webkit-box-shadow:0 0 18px rgba(111,1,32,3);
+}
+
+.playeds {
+  display: flex;
+  flex-direction: column;
+}
+
+.playeds .played {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #eee;
+}
+
+.playeds .played .home_team {
+  flex: 1;
+  text-align: center;
+  font-size: 19px;
+}
+
+.playeds .played .guest_team {
+  flex: 1;
+  text-align: center;
+  font-size: 19px;
+}
+
+.playeds .played .vs {
+  width: 80px;
+  text-align: center;
+  color: #ea8010;
+}
+
+.techstats {
+  text-align: center;
+}
+.techstats .techstat_table {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.techstats .techstat_table,
+.techstats .techstat_table--flip tbody {
+  -webkit-overflow-scrolling: touch;
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+.techstats .techstat_table td:first-child,
+.techstats .techstat_table--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+.techstats .techstat_table td:last-child,
+.techstats .techstat_table--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+.techstats .techstat_table th {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  background: #f2f0e6;
+}
+.techstats .techstat_table th,
+.techstats .techstat_table td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+.techstats .techstat_table--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+.techstats .techstat_table--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+.techstats .techstat_table--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.techstats .techstat_table--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.techstats .techstat_table--flip td,
+.techstats .techstat_table--flip th {
+  display: block;
+}
+.techstats .techstat_table--flip td {
+  background-image: none !important;
+  border-left: 0;
+}
+.techstats .techstat_table--flip th:not(:last-child),
+.techstats .techstat_table--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
+.weui_dialog_confirm input {
+	display: block;
+	padding: 0.8em;
+	width: 90%;
+	border: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #aaa;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
